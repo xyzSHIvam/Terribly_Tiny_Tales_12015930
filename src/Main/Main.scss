@@ -1,0 +1,124 @@
+.Maincontainer{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    .btn{
+        font-family: 'Rancho', cursive;
+        height:10vh;
+        width: 15vw;
+        border:none;
+        font-size: 3rem;
+        border-radius: 20px;
+        cursor: pointer;
+        animation:transition 1s;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .btn:hover{
+        animation-play-state: paused;
+        transform: scale(1.5);
+        background-color: transparent;
+        color: white;
+        box-shadow: 0 0 40px #0bf4f3, 0 0 40px #0bf4f3, 0 0 80px #0bf4f3;
+        border:2px white solid;
+    }
+    .content{
+        
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        .heading{
+            font-size:5rem;
+            font-weight:bolder;
+            color:white ;
+            animation:transition 1s;
+            text-shadow: 
+            0 0 5px #0bf4f3,
+            0 0 10px #0bf4f3,
+            0 0 20px #0bf4f3,
+            0 0 40px #0bf4f3,
+            0 0 80px #0bf4f3;
+            
+            
+        }
+        .bar{
+            background-color: white;
+            border-radius: 20px;
+            animation:transition 2s;
+            transition: all 0.5s ease-in-out;
+            .recharts-legend-item-text{
+                color: black !important;
+            }
+        }
+        .bar:hover{
+           
+            box-shadow: 0 0 10px #f004f8, 0 0 70px #f004f8, 0 0 80px #f004f8,0 0 80px #f004f8;
+        }
+
+            .export{
+                overflow: hidden;
+                width:10vw;
+                height:6vh;
+                padding: 10px;
+                color:white;
+                text-decoration: none;
+                border: #fcfafa 1px solid;
+                background-color: black;
+                cursor: pointer;
+                border: none;
+                border-radius:20px; 
+                font-family: 'Rancho', cursive;
+                font-size: 2rem;
+                position: relative;
+                animation:transition 3s;
+                transition: all 0.5s ease-in-out;
+                .text1{
+                    position:absolute;
+                        top:0;
+                        left:2rem;
+                        transition: top 0.7s;
+                }
+                .text2{
+                    position:absolute;
+                    top:3rem;
+                    left:1rem;
+                    transition: top 0.7s;
+                }
+            }
+            .export:hover{
+                transform: scale(1.1);
+                box-shadow: 0 0 40px #f004f8, 0 0 40px #f004f8, 0 0 80px #f004f8;
+                .text1{
+                    position:absolute;
+                        top:-3rem;
+                        left:2rem;
+                        transition: top 0.7s;
+                }
+                .text2{
+                    position:absolute;
+                    top:0rem;
+                    left:1rem;
+                    transition: top 0.7s;
+                }
+            }
+           
+        @keyframes transition {
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    
+    to{
+        opacity: 1;
+        transform:translateY(0);
+    }
+    
+}
+
+    }
+}
