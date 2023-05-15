@@ -19,7 +19,9 @@
 
 
 
+# DEPLOYED LINK: https://64613af9db1c453fd29b7a89--jolly-elf-d16966.netlify.app/
 
+# PDF FILE: https://drive.google.com/file/d/1E2zAXNwWBKmhBvMrnwEfpHDlGQWbdPyL/view?usp=sharing
 
 # **Library used in the project:**
 
